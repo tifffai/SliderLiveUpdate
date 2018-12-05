@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>CSS Variables and JS</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <h2>Live Image Updates with <span class='hl'>JS</span></h2>
@@ -19,42 +20,6 @@
   </div>
 
   <img src="https://images.unsplash.com/photo-1531904580788-2f94f100b86f?ixlib=rb-1.2.1&dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb">
-
-  <style>
-
-      :root {
-      --base: #b46f51;
-      --spacing: 10px;
-      --blur: 10px;
-    }
-
-    img {
-      padding: var(--spacing);
-      background: var(--base);
-      filter: blur(var(--blur));
-    }
-    
-    .hl {
-      color: var(--base);
-    }
-
-    body {
-      text-align: center;
-      background: #161616;
-      color: white;
-      font-family: 'helvetica neue', sans-serif;
-      font-weight: 100;
-      font-size: 50px;
-    }
-
-    .controls {
-      margin-bottom: 50px;
-    }
-
-    input {
-      width: 100px;
-    }
-  </style>
 
   <script>
     const inputs = document.querySelectorAll('.controls input');
